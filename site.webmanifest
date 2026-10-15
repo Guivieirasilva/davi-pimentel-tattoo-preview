@@ -1,0 +1,14 @@
+{
+  "name": "Davi Pimentel Tattoo",
+  "short_name": "Davi Pimentel Tattoo",
+  "description": "Tatuador fineline e blackwork em Guarulhos, SP, com hora marcada.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#0B0B0B",
+  "theme_color": "#0B0B0B",
+  "icons": [
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

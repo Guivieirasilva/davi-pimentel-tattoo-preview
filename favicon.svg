@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Davi Pimentel Tattoo">
+  <rect width="64" height="64" fill="#0B0B0B"/>
+  <path fill="#EDEAE4" fill-rule="evenodd"
+        d="M19 13h14c13 0 21 8 21 19s-8 19-21 19H19V13zm7 6v26h7c8 0 13-5 13-13s-5-13-13-13h-7z"/>
+</svg>
