@@ -18,6 +18,7 @@ if (location.hash === '#revisao' || /[?&]revisao(?:[=&]|$)/.test(location.search
   body.dataset.portrait = 'placeholder';
   body.dataset.gallery = 'placeholder';
   body.dataset.wall = 'placeholder';
+  body.dataset.revisao = 'on';   // mostra também os espaços da lista de fotos (.slots-revisao)
 }
 
 /* ---------- Trava de rolagem compartilhada (drawer e lightbox) ---------- */
@@ -130,7 +131,7 @@ if (reduce || !hasIO) {
       e.target.classList.add('is-visible');
       ioReveal.unobserve(e.target);
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' }); // aparece assim que o topo entra: blocos altos não deixam faixa vazia
   const vh = innerHeight;
   reveals.forEach((el) => {
     // O que já está na tela aparece sem transição (evita piscar ao remover .no-js)
@@ -156,7 +157,8 @@ const galleryActive = body.dataset.gallery === 'live' || body.dataset.gallery ==
 const catsOf = (li) => (li.dataset.cat || '').split(/\s+/).filter(Boolean);
 
 if (galeria && filtros && galleryActive) {
-  const items = $$(':scope > li', galeria);
+  const items = $$(':scope > li:not(.galeria-mais)', galeria);
+  const extra = $('.galeria-mais', galeria); // casa "Mais trabalhos no Instagram": só com "Todos"
   const present = new Set();
   items.forEach((li) => catsOf(li).forEach((c) => present.add(c)));
   $$('.chip', filtros).forEach((chip) => {
@@ -175,22 +177,43 @@ if (galeria && filtros && galleryActive) {
     filtroStatus.textContent = msg;
   };
 
-  filtros.addEventListener('click', (e) => {
-    const chip = e.target.closest('.chip');
-    if (!chip) return;
+  // O filtro escolhido fica na URL (?estilo=fineline): dá para compartilhar o link já filtrado.
+  const syncUrl = (cat) => {
+    try {
+      const url = new URL(location.href);
+      if (cat === 'all') url.searchParams.delete('estilo');
+      else url.searchParams.set('estilo', cat);
+      history.replaceState(history.state, '', url);
+    } catch (err) { /* URL/History indisponível: o filtro funciona do mesmo jeito */ }
+  };
+
+  const applyFilter = (chip, { animate = true, updateUrl = true } = {}) => {
     const cat = chip.dataset.filter || 'all';
     $$('.chip', filtros).forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+    if (updateUrl) syncUrl(cat);
+    if (extra) extra.hidden = cat !== 'all';
     requestAnimationFrame(() => {
       let n = 0;
       items.forEach((li) => {
         const show = cat === 'all' || catsOf(li).includes(cat);
-        if (show && li.hidden && !reduce) li.classList.add('is-entering');
+        if (animate && show && li.hidden && !reduce) li.classList.add('is-entering');
         li.hidden = !show;
         if (show) n += 1;
       });
       announce(n, cat === 'all' ? '' : chip.textContent.trim());
     });
+  };
+
+  filtros.addEventListener('click', (e) => {
+    const chip = e.target.closest('.chip');
+    if (chip) applyFilter(chip);
   });
+
+  const initial = new URLSearchParams(location.search).get('estilo');
+  const initialChip = !filtros.hidden && initial
+    ? $$('.chip', filtros).find((c) => c.dataset.filter === initial)
+    : null;
+  if (initialChip) applyFilter(initialChip, { animate: false, updateUrl: false });
   galeria.addEventListener('animationend', (e) => {
     if (e.target instanceof Element) e.target.classList.remove('is-entering');
   });
@@ -388,27 +411,6 @@ if (floatBtn) {
   } else {
     floatBtn.classList.add('is-visible');
   }
-}
-
-/* ---------- Topo: brilho e leve paralaxe seguindo o cursor (desktop) ---------- */
-const stage = $('.hero-stage');
-if (stage && !reduce && matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  let raf = 0;
-  let gx = 78;
-  let gy = 42;
-  stage.addEventListener('pointermove', (e) => {
-    const r = stage.getBoundingClientRect();
-    gx = ((e.clientX - r.left) / r.width) * 100;
-    gy = ((e.clientY - r.top) / r.height) * 100;
-    if (raf) return;
-    raf = requestAnimationFrame(() => {
-      raf = 0;
-      stage.style.setProperty('--gx', `${gx.toFixed(1)}%`);
-      stage.style.setProperty('--gy', `${gy.toFixed(1)}%`);
-      stage.style.setProperty('--px', (gx / 50 - 1).toFixed(3));
-      stage.style.setProperty('--py', (gy / 50 - 1).toFixed(3));
-    });
-  });
 }
 
 /* ---------- 10.8 Ano do rodapé ---------- */

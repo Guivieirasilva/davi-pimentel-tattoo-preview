@@ -16,9 +16,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
-  <script type="module" src="assets/js/main.js?v=3"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=Inter:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <script type="module" src="assets/js/main.js?v=4"></script>
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
@@ -120,7 +120,7 @@
 }
   </script>
 </head>
-<body data-hero="type" data-portrait="none" data-gallery="live" data-wall="hidden">
+<body data-hero="type" data-portrait="photo" data-gallery="live" data-wall="hidden">
 
   <svg hidden aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/></symbol>
@@ -132,7 +132,6 @@
     <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20.5l1.3-4A8.5 8.5 0 1 1 8.4 19.4L4 20.5z"/><path d="M9.3 8.7c.1-.4.4-.6.7-.6h.7c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c.6 1.2 1.6 2.2 2.8 2.8l.6-.5c.2-.2.4-.2.6-.1l1.5.6c.2.1.4.3.4.5v.7c0 .5-.3.8-.7.9-1.1.3-2.8-.3-4.6-2.1-1.8-1.8-2.4-3.5-2.5-4.3z"/></symbol>
     <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><path d="M17.2 6.8h.01"/></symbol>
     <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M13.5 4v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M13.5 4c.3 2.7 1.9 4.3 4.5 4.5"/></symbol>
-    <symbol id="i-star4" viewBox="0 0 24 24"><path d="M12 1.5 13.9 10.1 22.5 12 13.9 13.9 12 22.5 10.1 13.9 1.5 12 10.1 10.1Z"/></symbol>
     <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="1"/><path d="M3.5 16l5-5 4 4 2.5-2.5 5.5 5.5"/><path d="M15.5 8.5h.01"/></symbol>
   </svg>
 
@@ -151,10 +150,10 @@
         </button>
         <div class="nav-panel" id="nav-list">
           <ul class="nav-links" role="list">
-            <li><a href="#sobre"><span class="nav-num" aria-hidden="true">01</span>Sobre</a></li>
-            <li><a href="#portfolio"><span class="nav-num" aria-hidden="true">02</span>Portfólio</a></li>
-            <li><a href="#processo"><span class="nav-num" aria-hidden="true">03</span>Processo</a></li>
-            <li><a href="#cuidados"><span class="nav-num" aria-hidden="true">04</span>Cuidados</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#cuidados">Cuidados</a></li>
           </ul>
           <div class="nav-extra">
             <a class="btn btn-primary" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="drawer" aria-label="Orçar pelo WhatsApp (abre em nova aba)">
@@ -169,7 +168,7 @@
         </div>
       </nav>
 
-      <a class="btn btn-ghost btn-header" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="header" aria-label="Orçamento pelo WhatsApp (abre em nova aba)">
+      <a class="btn btn-primary btn-header" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="header" aria-label="Orçamento pelo WhatsApp (abre em nova aba)">
         <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg><span>Orçamento</span>
       </a>
     </div>
@@ -180,7 +179,6 @@
     <section id="inicio" class="hero" aria-labelledby="h-inicio" tabindex="-1">
       <div class="hero-stage">
         <div class="sentinela" aria-hidden="true"></div>
-        <div class="hero-glow" aria-hidden="true"></div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="hero-art" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
         <g class="e-g d1">
         <circle cx="300" cy="300" r="286" pathLength="1"/>
@@ -404,9 +402,9 @@
         </g>
         </svg>
 
-        <div class="placeholder placeholder-hero" role="img" aria-label="Espaço reservado: foto do hero, a substituir" data-slot="hero">
+        <div class="placeholder placeholder-hero" role="img" aria-label="Espaço reservado D2: mãos tatuando em close, a substituir" data-slot="hero">
           <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg>
-          <span class="placeholder-label">Foto do hero · Substituir</span>
+          <span class="placeholder-label">D2 · Mãos tatuando em close (16:9) ou D9 · vídeo curto · Substituir</span>
         </div>
 
         <figure class="hero-foto" aria-hidden="true">
@@ -417,10 +415,9 @@
         </figure>
         <div class="hero-inner">
           <div class="hero-text">
-            <p class="eyebrow hero-eyebrow">Tatuagens autorais</p>
             <h1 id="h-inicio">
-              <span class="h1-name">Davi Pimentel <em>Tattoo</em></span>
-              <span class="h1-sub">Tatuador fineline e blackwork em Guarulhos, SP</span>
+              <span class="h1-name">Davi Pimentel Tattoo</span>
+              <span class="h1-sub">Tatuador autoral de fineline e blackwork em Guarulhos, SP</span>
             </h1>
             <p class="slogan">A alma inspira. A pele eterniza.</p>
             <div class="hero-actions">
@@ -431,38 +428,36 @@
               <a class="btn btn-ghost" href="#portfolio">Ver portfólio</a>
             </div>
           </div>
-          <p class="hero-tag" aria-hidden="true">Guarulhos, SP · Terça a sábado</p>
         </div>
-        <span class="hero-scroll" aria-hidden="true"></span>
       </div>
 
       <div class="fatos">
         <div class="container">
           <dl class="fatos-list">
             <div><dt>Hora marcada</dt><dd>Atendimento somente com agendamento</dd></div>
-            <div><dt>Terça a sábado</dt><dd class="tnum">10h às 19h</dd></div>
-            <div><dt>Pix e cartão</dt><dd>Parcelamento em até 12x, com a taxa da operadora</dd></div>
-            <div><dt class="tnum">7 anos</dt><dd>de experiência</dd></div>
+            <div><dt>Terça a sábado</dt><dd class="tnum">10h&nbsp;às&nbsp;19h</dd></div>
+            <div><dt>Pix e cartão</dt><dd>Parcelamento em até&nbsp;12x, com a taxa da operadora</dd></div>
+            <div><dt class="tnum">7&nbsp;anos</dt><dd>de experiência</dd></div>
           </dl>
         </div>
       </div>
     </section>
 
-    <div class="faixa" aria-hidden="true">
-      <div class="faixa-track"><div class="faixa-grupo"><span>Fineline</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Blackwork</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Sketch</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Old school</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Projetos autorais</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Flashes</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg></div><div class="faixa-grupo"><span>Fineline</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Blackwork</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Sketch</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Old school</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Projetos autorais</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg><span>Flashes</span><svg aria-hidden="true" focusable="false"><use href="#i-star4"></use></svg></div></div>
-    </div>
     <section id="sobre" class="sobre" aria-labelledby="h-sobre" tabindex="-1">
       <div class="container sobre-grid">
         <div class="sobre-head reveal">
-          <p class="eyebrow">Sobre</p>
           <h2 id="h-sobre">Arte que transcende a pele.</h2>
         </div>
 
         <div class="sobre-media">
-          <div class="placeholder placeholder-portrait" role="img" aria-label="Espaço reservado: retrato de Davi Pimentel, a substituir" data-slot="portrait">
+          <div class="placeholder placeholder-portrait" role="img" aria-label="Espaço reservado D1: retrato de Davi Pimentel, a substituir" data-slot="portrait">
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg>
-            <span class="placeholder-label">Retrato do tatuador (P&amp;B) · Substituir</span>
+            <span class="placeholder-label">D1 · Retrato do Davi em P&amp;B (4:5) · Substituir</span>
           </div>
+          <picture class="sobre-pic">
+            <source type="image/webp" srcset="assets/img/sobre/retrato-480.webp 480w, assets/img/sobre/retrato-960.webp 960w" sizes="(min-width: 900px) 40vw, 100vw">
+            <img src="assets/img/sobre/retrato-960.jpg" srcset="assets/img/sobre/retrato-480.jpg 480w, assets/img/sobre/retrato-960.jpg 960w" sizes="(min-width: 900px) 40vw, 100vw" width="960" height="1200" alt="Davi Pimentel tatuando, de boné e luvas, com uma luz circular ao fundo, em preto e branco" loading="lazy" decoding="async">
+          </picture>
         </div>
 
         <div class="sobre-body reveal">
@@ -477,13 +472,13 @@
           <p class="assinatura">— Davi Pimentel</p>
 
           <dl class="ficha">
-            <div><dt>Experiência</dt><dd class="tnum">7 anos</dd></div>
+            <div><dt>Experiência</dt><dd class="tnum">7&nbsp;anos</dd></div>
             <div><dt>Estilos</dt><dd>Fineline, blackwork, sketch e old school</dd></div>
             <div><dt>Projetos</dt><dd>Autorais, a partir da sua ideia, e também flashes</dd></div>
-            <div><dt>Atendimento</dt><dd>Somente com hora marcada · <span class="tnum">Terça a sábado, 10h às 19h</span></dd></div>
+            <div><dt>Atendimento</dt><dd>Somente com hora marcada · <span class="tnum">Terça a sábado, 10h&nbsp;às&nbsp;19h</span></dd></div>
             <div><dt>Onde</dt><dd>Guarulhos, SP e cidades próximas · Atendimento como guest, sem estúdio fixo</dd></div>
-            <div><dt>Idade mínima</dt><dd>18 anos, com documento</dd></div>
-            <div><dt>Pagamento</dt><dd>Pix e cartão · Parcelamento em até 12x, com a taxa da operadora</dd></div>
+            <div><dt>Idade mínima</dt><dd>18&nbsp;anos, com documento</dd></div>
+            <div><dt>Pagamento</dt><dd>Pix e cartão · Parcelamento em até&nbsp;12x, com a taxa da operadora</dd></div>
           </dl>
         </div>
       </div>
@@ -491,7 +486,6 @@
 
     <section id="portfolio" class="portfolio" aria-labelledby="h-portfolio" tabindex="-1">
       <div class="container portfolio-head reveal">
-        <p class="eyebrow">Portfólio</p>
         <h2 id="h-portfolio">Fineline, blackwork e projetos autorais</h2>
         <blockquote class="quote">
           <p>Mais do que reproduzir imagens, busco criar algo que tenha identidade, propósito e conexão com quem carrega a marca.</p>
@@ -513,17 +507,19 @@
 <li data-cat="blackwork" data-destaque="true">
   <figure>
     <button type="button" class="tile" aria-label="Ampliar: Tatuagem em preto e cinza de três anjos de pedra rachada no braço, ao lado do desenho original, por Davi Pimentel Tattoo"
-            data-full="assets/img/portfolio/01-blackwork-anjos-pedra-1200.jpg" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
+            data-full="assets/img/portfolio/01-blackwork-anjos-pedra-1440.webp" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
       <picture>
         <source type="image/webp"
                 srcset="assets/img/portfolio/01-blackwork-anjos-pedra-480.webp 480w,
                         assets/img/portfolio/01-blackwork-anjos-pedra-800.webp 800w,
-                        assets/img/portfolio/01-blackwork-anjos-pedra-1200.webp 1200w"
+                        assets/img/portfolio/01-blackwork-anjos-pedra-1200.webp 1200w,
+                        assets/img/portfolio/01-blackwork-anjos-pedra-1440.webp 1440w"
                 sizes="(min-width: 1280px) 785px, (min-width: 900px) 61vw, 100vw">
         <img src="assets/img/portfolio/01-blackwork-anjos-pedra-800.jpg"
              srcset="assets/img/portfolio/01-blackwork-anjos-pedra-480.jpg 480w,
                      assets/img/portfolio/01-blackwork-anjos-pedra-800.jpg 800w,
-                     assets/img/portfolio/01-blackwork-anjos-pedra-1200.jpg 1200w"
+                     assets/img/portfolio/01-blackwork-anjos-pedra-1200.jpg 1200w,
+                     assets/img/portfolio/01-blackwork-anjos-pedra-1440.jpg 1440w"
              sizes="(min-width: 1280px) 785px, (min-width: 900px) 61vw, 100vw"
              width="800" height="1067" loading="lazy" decoding="async"
              alt="Tatuagem em preto e cinza de três anjos de pedra rachada no braço, ao lado do desenho original, por Davi Pimentel Tattoo">
@@ -535,17 +531,19 @@
 <li data-cat="blackwork">
   <figure>
     <button type="button" class="tile" aria-label="Ampliar: Tatuagem em preto e cinza de dois rostos femininos com moldura ornamental, rosas e colar de pérolas no braço, por Davi Pimentel Tattoo"
-            data-full="assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1200.jpg" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
+            data-full="assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1440.webp" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
       <picture>
         <source type="image/webp"
                 srcset="assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-480.webp 480w,
                         assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-800.webp 800w,
-                        assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1200.webp 1200w"
+                        assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1200.webp 1200w,
+                        assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1440.webp 1440w"
                 sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw">
         <img src="assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-800.jpg"
              srcset="assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-480.jpg 480w,
                      assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-800.jpg 800w,
-                     assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1200.jpg 1200w"
+                     assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1200.jpg 1200w,
+                     assets/img/portfolio/02-blackwork-retratos-femininos-ornamentais-1440.jpg 1440w"
              sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw"
              width="800" height="1067" loading="lazy" decoding="async"
              alt="Tatuagem em preto e cinza de dois rostos femininos com moldura ornamental, rosas e colar de pérolas no braço, por Davi Pimentel Tattoo">
@@ -557,17 +555,19 @@
 <li data-cat="blackwork">
   <figure>
     <button type="button" class="tile" aria-label="Ampliar: Tatuagem em preto e cinza de elmo espartano com capa e escudo no braço, por Davi Pimentel Tattoo"
-            data-full="assets/img/portfolio/03-blackwork-elmo-espartano-1200.jpg" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
+            data-full="assets/img/portfolio/03-blackwork-elmo-espartano-1440.webp" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
       <picture>
         <source type="image/webp"
                 srcset="assets/img/portfolio/03-blackwork-elmo-espartano-480.webp 480w,
                         assets/img/portfolio/03-blackwork-elmo-espartano-800.webp 800w,
-                        assets/img/portfolio/03-blackwork-elmo-espartano-1200.webp 1200w"
+                        assets/img/portfolio/03-blackwork-elmo-espartano-1200.webp 1200w,
+                        assets/img/portfolio/03-blackwork-elmo-espartano-1440.webp 1440w"
                 sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw">
         <img src="assets/img/portfolio/03-blackwork-elmo-espartano-800.jpg"
              srcset="assets/img/portfolio/03-blackwork-elmo-espartano-480.jpg 480w,
                      assets/img/portfolio/03-blackwork-elmo-espartano-800.jpg 800w,
-                     assets/img/portfolio/03-blackwork-elmo-espartano-1200.jpg 1200w"
+                     assets/img/portfolio/03-blackwork-elmo-espartano-1200.jpg 1200w,
+                     assets/img/portfolio/03-blackwork-elmo-espartano-1440.jpg 1440w"
              sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw"
              width="800" height="1066" loading="lazy" decoding="async"
              alt="Tatuagem em preto e cinza de elmo espartano com capa e escudo no braço, por Davi Pimentel Tattoo">
@@ -575,6 +575,120 @@
     </button>
     <figcaption class="sr-only">Tatuagem em preto e cinza de elmo espartano com capa e escudo no braço, por Davi Pimentel Tattoo</figcaption>
   </figure>
+</li>
+<li data-cat="blackwork">
+  <figure>
+    <button type="button" class="tile" aria-label="Ampliar: Tatuagem em preto e cinza de águia com relógio de algarismos romanos, olho e engrenagens no braço"
+            data-full="assets/img/portfolio/04-blackwork-aguia-relogio-1086.webp" data-cat-label="Blackwork" data-local="braço" data-label="Blackwork · braço">
+      <picture>
+        <source type="image/webp"
+                srcset="assets/img/portfolio/04-blackwork-aguia-relogio-480.webp 480w,
+                        assets/img/portfolio/04-blackwork-aguia-relogio-800.webp 800w,
+                        assets/img/portfolio/04-blackwork-aguia-relogio-1086.webp 1086w"
+                sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw">
+        <img src="assets/img/portfolio/04-blackwork-aguia-relogio-800.jpg"
+             srcset="assets/img/portfolio/04-blackwork-aguia-relogio-480.jpg 480w,
+                     assets/img/portfolio/04-blackwork-aguia-relogio-800.jpg 800w,
+                     assets/img/portfolio/04-blackwork-aguia-relogio-1086.jpg 1086w"
+             sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw"
+             width="800" height="1067" loading="lazy" decoding="async"
+             alt="Tatuagem em preto e cinza de águia com relógio de algarismos romanos, olho e engrenagens no braço">
+      </picture>
+    </button>
+    <figcaption class="sr-only">Tatuagem em preto e cinza de águia com relógio de algarismos romanos, olho e engrenagens no braço</figcaption>
+  </figure>
+</li>
+<li data-cat="fineline">
+  <figure>
+    <button type="button" class="tile" aria-label="Ampliar: Tatuagem em traço fino de frase em letra cursiva, com flores e borboletas, nas costas"
+            data-full="assets/img/portfolio/05-fineline-frase-borboletas-1086.webp" data-cat-label="Fineline" data-local="costas" data-label="Fineline · costas">
+      <picture>
+        <source type="image/webp"
+                srcset="assets/img/portfolio/05-fineline-frase-borboletas-480.webp 480w,
+                        assets/img/portfolio/05-fineline-frase-borboletas-800.webp 800w,
+                        assets/img/portfolio/05-fineline-frase-borboletas-1086.webp 1086w"
+                sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw">
+        <img src="assets/img/portfolio/05-fineline-frase-borboletas-800.jpg"
+             srcset="assets/img/portfolio/05-fineline-frase-borboletas-480.jpg 480w,
+                     assets/img/portfolio/05-fineline-frase-borboletas-800.jpg 800w,
+                     assets/img/portfolio/05-fineline-frase-borboletas-1086.jpg 1086w"
+             sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw"
+             width="800" height="1067" loading="lazy" decoding="async"
+             alt="Tatuagem em traço fino de frase em letra cursiva, com flores e borboletas, nas costas">
+      </picture>
+    </button>
+    <figcaption class="sr-only">Tatuagem em traço fino de frase em letra cursiva, com flores e borboletas, nas costas</figcaption>
+  </figure>
+</li>
+<li data-cat="blackwork">
+  <figure>
+    <button type="button" class="tile" aria-label="Ampliar: Tatuagem em preto e cinza de mão segurando taça de vinho e cigarro, com rosa e fumaça, no antebraço"
+            data-full="assets/img/portfolio/06-blackwork-taca-vinho-1086.webp" data-cat-label="Blackwork" data-local="antebraço" data-label="Blackwork · antebraço">
+      <picture>
+        <source type="image/webp"
+                srcset="assets/img/portfolio/06-blackwork-taca-vinho-480.webp 480w,
+                        assets/img/portfolio/06-blackwork-taca-vinho-800.webp 800w,
+                        assets/img/portfolio/06-blackwork-taca-vinho-1086.webp 1086w"
+                sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw">
+        <img src="assets/img/portfolio/06-blackwork-taca-vinho-800.jpg"
+             srcset="assets/img/portfolio/06-blackwork-taca-vinho-480.jpg 480w,
+                     assets/img/portfolio/06-blackwork-taca-vinho-800.jpg 800w,
+                     assets/img/portfolio/06-blackwork-taca-vinho-1086.jpg 1086w"
+             sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw"
+             width="800" height="1067" loading="lazy" decoding="async"
+             alt="Tatuagem em preto e cinza de mão segurando taça de vinho e cigarro, com rosa e fumaça, no antebraço">
+      </picture>
+    </button>
+    <figcaption class="sr-only">Tatuagem em preto e cinza de mão segurando taça de vinho e cigarro, com rosa e fumaça, no antebraço</figcaption>
+  </figure>
+</li>
+<li data-cat="blackwork">
+  <figure>
+    <button type="button" class="tile" aria-label="Ampliar: Tatuagem em preto e cinza de cadeira de plástico com garrafa e copo"
+            data-full="assets/img/portfolio/07-blackwork-cadeira-garrafa-610.webp" data-cat-label="Blackwork">
+      <picture>
+        <source type="image/webp"
+                srcset="assets/img/portfolio/07-blackwork-cadeira-garrafa-480.webp 480w,
+                        assets/img/portfolio/07-blackwork-cadeira-garrafa-610.webp 610w"
+                sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw">
+        <img src="assets/img/portfolio/07-blackwork-cadeira-garrafa-610.jpg"
+             srcset="assets/img/portfolio/07-blackwork-cadeira-garrafa-480.jpg 480w,
+                     assets/img/portfolio/07-blackwork-cadeira-garrafa-610.jpg 610w"
+             sizes="(min-width: 1280px) 387px, (min-width: 900px) 30vw, 50vw"
+             width="610" height="816" loading="lazy" decoding="async"
+             alt="Tatuagem em preto e cinza de cadeira de plástico com garrafa e copo">
+      </picture>
+    </button>
+    <figcaption class="sr-only">Tatuagem em preto e cinza de cadeira de plástico com garrafa e copo</figcaption>
+  </figure>
+</li>
+<li data-cat="outros" data-destaque="true">
+  <figure>
+    <button type="button" class="tile" aria-label="Ampliar: Tatuagem de máscara kitsune com lua crescente, flores de cerejeira e chamas em preto e vermelho no antebraço"
+            data-full="assets/img/portfolio/08-outros-mascara-kitsune-1086.webp" data-cat-label="Outros" data-local="antebraço" data-label="Outros · antebraço">
+      <picture>
+        <source type="image/webp"
+                srcset="assets/img/portfolio/08-outros-mascara-kitsune-480.webp 480w,
+                        assets/img/portfolio/08-outros-mascara-kitsune-800.webp 800w,
+                        assets/img/portfolio/08-outros-mascara-kitsune-1086.webp 1086w"
+                sizes="(min-width: 1280px) 785px, (min-width: 900px) 61vw, 50vw">
+        <img src="assets/img/portfolio/08-outros-mascara-kitsune-800.jpg"
+             srcset="assets/img/portfolio/08-outros-mascara-kitsune-480.jpg 480w,
+                     assets/img/portfolio/08-outros-mascara-kitsune-800.jpg 800w,
+                     assets/img/portfolio/08-outros-mascara-kitsune-1086.jpg 1086w"
+             sizes="(min-width: 1280px) 785px, (min-width: 900px) 61vw, 50vw"
+             width="800" height="1067" loading="lazy" decoding="async"
+             alt="Tatuagem de máscara kitsune com lua crescente, flores de cerejeira e chamas em preto e vermelho no antebraço">
+      </picture>
+    </button>
+    <figcaption class="sr-only">Tatuagem de máscara kitsune com lua crescente, flores de cerejeira e chamas em preto e vermelho no antebraço</figcaption>
+  </figure>
+</li>
+<li class="galeria-mais">
+  <a class="galeria-mais-link" href="https://www.instagram.com/davipimentel.tattoo" target="_blank" rel="noopener" aria-label="Mais trabalhos no Instagram @davipimentel.tattoo (abre em nova aba)">
+    <span>Mais trabalhos no Instagram</span>
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"></use></svg>
+  </a>
 </li>
       </ul>
 
@@ -586,75 +700,21 @@
           </div>
           <ul class="estilos reveal-group" role="list">
           <li class="estilo reveal">
-            <svg class="estilo-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M30 98 C48 78 62 58 92 22"/>
-<path d="M39.45 87.11 Q42.59 76.98 34.78 69.81 Q31.63 79.94 39.45 87.11 Z"/>
-<path d="M46.71 78.28 Q54.86 84.27 63.75 79.43 Q55.59 73.44 46.71 78.28 Z"/>
-<path d="M54.25 68.84 Q56.89 59.58 49.61 53.28 Q46.97 62.54 54.25 68.84 Z"/>
-<path d="M62.4 58.54 Q69.8 63.91 77.77 59.45 Q70.38 54.09 62.4 58.54 Z"/>
-<path d="M71.49 47.12 Q73.93 38.82 67.41 33.14 Q64.97 41.44 71.49 47.12 Z"/>
-<path d="M80.29 36.22 Q86.86 41.17 94.09 37.23 Q87.51 32.29 80.29 36.22 Z"/>
-<circle cx="86" cy="46" r="1.1" fill="currentColor" stroke="none"/>
-<circle cx="96" cy="56" r="0.8" fill="currentColor" stroke="none"/>
-<circle cx="78" cy="36" r="0.7" fill="currentColor" stroke="none"/>
-</svg>
             <h4>Fineline</h4>
             <p>Traço fino e delicado, para desenhos minimalistas e cheios de detalhe.</p>
             <a class="link-seta" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20or%C3%A7ar%20uma%20tatuagem%20fineline.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="estilo_fineline" aria-label="Orçar fineline pelo WhatsApp (abre em nova aba)">Orçar fineline<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
           </li>
           <li class="estilo reveal">
-            <svg class="estilo-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-<circle cx="60" cy="60" r="46"/>
-<circle cx="60" cy="60" r="34"/>
-<path d="M60 26 L71.91 15.57 L77 30.56 Z" fill="currentColor" stroke="none"/>
-<path d="M77 30.56 L92.53 27.47 L89.44 43 Z"/>
-<path d="M89.44 43 L104.43 48.09 L94 60 Z" fill="currentColor" stroke="none"/>
-<path d="M94 60 L104.43 71.91 L89.44 77 Z"/>
-<path d="M89.44 77 L92.53 92.53 L77 89.44 Z" fill="currentColor" stroke="none"/>
-<path d="M77 89.44 L71.91 104.43 L60 94 Z"/>
-<path d="M60 94 L48.09 104.43 L43 89.44 Z" fill="currentColor" stroke="none"/>
-<path d="M43 89.44 L27.47 92.53 L30.56 77 Z"/>
-<path d="M30.56 77 L15.57 71.91 L26 60 Z" fill="currentColor" stroke="none"/>
-<path d="M26 60 L15.57 48.09 L30.56 43 Z"/>
-<path d="M30.56 43 L27.47 27.47 L43 30.56 Z" fill="currentColor" stroke="none"/>
-<path d="M43 30.56 L48.09 15.57 L60 26 Z"/>
-<path d="M77.47 69.74 A20 20 0 1 1 60.96 40.02 A17 17 0 1 0 77.47 69.74 Z" fill="currentColor" stroke="none"/>
-</svg>
             <h4>Blackwork</h4>
             <p>Preto sólido e formas marcantes, da geometria aos símbolos.</p>
             <a class="link-seta" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20or%C3%A7ar%20uma%20tatuagem%20blackwork.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="estilo_blackwork" aria-label="Orçar blackwork pelo WhatsApp (abre em nova aba)">Orçar blackwork<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
           </li>
           <li class="estilo reveal">
-            <svg class="estilo-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-<circle cx="60" cy="60" r="40"/>
-<circle cx="61.6" cy="58.8" r="41.5" opacity=".55"/>
-<circle cx="59" cy="61.4" r="38.8" opacity=".4"/>
-<path d="M36 28 L92 84" opacity=".8"/>
-<path d="M39.6 25.6 L94.4 80.4" opacity=".8"/>
-<path d="M43.54 23.54 L96.46 76.46" opacity=".8"/>
-<path d="M47.88 21.88 L98.12 72.12" opacity=".8"/>
-<path d="M52.68 20.68 L99.32 67.32" opacity=".8"/>
-<path d="M58.05 20.05 L99.95 61.95" opacity=".8"/>
-<path d="M18 104 C40 98 74 100 102 94" opacity=".6"/>
-</svg>
             <h4>Sketch</h4>
             <p>Aparência de esboço, com linhas soltas e hachuras.</p>
             <a class="link-seta" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20or%C3%A7ar%20uma%20tatuagem%20sketch.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="estilo_sketch" aria-label="Orçar sketch pelo WhatsApp (abre em nova aba)">Orçar sketch<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
           </li>
           <li class="estilo reveal">
-            <svg class="estilo-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M60 14 L71.17 44.63 L103.75 45.79 L78.07 65.87 L87.04 97.21 L60 79 L32.96 97.21 L41.93 65.87 L16.25 45.79 L48.83 44.63 Z" stroke-width="3"/>
-<path d="M60 60 L60 14 L48.83 44.63 Z" fill="currentColor" stroke="none"/>
-<path d="M60 60 L60 14" stroke-width="1.5"/>
-<path d="M60 60 L103.75 45.79 L71.17 44.63 Z" fill="currentColor" stroke="none"/>
-<path d="M60 60 L103.75 45.79" stroke-width="1.5"/>
-<path d="M60 60 L87.04 97.21 L78.07 65.87 Z" fill="currentColor" stroke="none"/>
-<path d="M60 60 L87.04 97.21" stroke-width="1.5"/>
-<path d="M60 60 L32.96 97.21 L60 79 Z" fill="currentColor" stroke="none"/>
-<path d="M60 60 L32.96 97.21" stroke-width="1.5"/>
-<path d="M60 60 L16.25 45.79 L41.93 65.87 Z" fill="currentColor" stroke="none"/>
-<path d="M60 60 L16.25 45.79" stroke-width="1.5"/>
-</svg>
             <h4>Old school</h4>
             <p>Contornos firmes e símbolos clássicos da tatuagem.</p>
             <a class="link-seta" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20or%C3%A7ar%20uma%20tatuagem%20old%20school.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="estilo_oldschool" aria-label="Orçar old school pelo WhatsApp (abre em nova aba)">Orçar old school<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
@@ -674,34 +734,36 @@
     <section id="processo" class="processo" aria-labelledby="h-processo" tabindex="-1">
       <div class="container">
         <div class="processo-head reveal">
-          <p class="eyebrow">Processo</p>
           <h2 id="h-processo">Do primeiro contato à sessão</h2>
           <p class="lead">Quatro passos, tudo combinado pelo WhatsApp.</p>
         </div>
 
         <ol class="etapas reveal-group" role="list">
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">01</span>
             <h3>Contato</h3>
             <p>Me chame no WhatsApp e conte sua ideia, o local do corpo e o tamanho aproximado. Se tiver referências, mande junto.</p>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">02</span>
             <h3>Orçamento</h3>
             <p>Você recebe o valor e as datas disponíveis, e a reserva é confirmada conforme combinado na conversa.</p>
-            <p class="nota">Pix e cartão · Parcelamento em até 12x, com a taxa da operadora</p>
+            <p class="nota">Pix e cartão · Parcelamento em até&nbsp;12x, com a taxa da operadora</p>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">03</span>
             <h3>Criação</h3>
             <p>Projeto autoral: o desenho nasce da sua ideia e é ajustado com você antes da sessão. Prefere um flash? Escolha um desenho pronto e combinamos os detalhes.</p>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">04</span>
             <h3>Sessão</h3>
-            <p>No dia, com hora marcada: atenção e cuidado do início ao fim. Leve um documento — atendo somente maiores de 18 anos.</p>
+            <p>No dia, com hora marcada: atenção e cuidado do início ao fim. Leve um documento — atendo somente maiores de 18&nbsp;anos.</p>
           </li>
         </ol>
+
+        <div class="slots-revisao">
+          <div class="placeholder" role="img" aria-label="Espaço reservado D3: Davi desenhando o projeto" data-slot="processo-criacao"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg><span class="placeholder-label">D3 · Davi desenhando o projeto (4:5)</span></div>
+          <div class="placeholder" role="img" aria-label="Espaço reservado D6: estêncil e conversa com o cliente" data-slot="processo-sessao"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg><span class="placeholder-label">D6 · Estêncil e conversa com o cliente, sem rosto (4:5)</span></div>
+          <div class="placeholder" role="img" aria-label="Espaço reservado D5: bancada preparada" data-slot="processo-higiene"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg><span class="placeholder-label">D5 · Bancada preparada (4:5) · só com texto de higiene validado</span></div>
+          <div class="placeholder" role="img" aria-label="Espaço reservado D10: folhas de flash" data-slot="processo-flashes"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg><span class="placeholder-label">D10 · Folhas de flash vistas de cima (4:5)</span></div>
+        </div>
 
         <p class="section-cta reveal">
           <a class="btn btn-primary" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="process" aria-label="Começar pelo WhatsApp (abre em nova aba)">
@@ -714,7 +776,7 @@
           <dl class="saber">
             <div>
               <dt>Reserva e pagamento</dt>
-              <dd>Pagamento por Pix ou cartão, com parcelamento em até 12x (com a taxa da operadora). As condições de reserva são informadas junto com o orçamento.
+              <dd>Pagamento por Pix ou cartão, com parcelamento em até&nbsp;12x (com a taxa da operadora). As condições de reserva são informadas junto com o orçamento.
                 <a class="link-seta" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20tenho%20uma%20d%C3%BAvida%20antes%20de%20agendar%3A%20" target="_blank" rel="noopener" data-cta="question" aria-label="Perguntar no WhatsApp (abre em nova aba)">Perguntar no WhatsApp<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
               </dd>
             </div>
@@ -741,58 +803,51 @@
       </div>
     </section>
     <div class="parede">
-      <div class="placeholder placeholder-wall" role="img" aria-label="Espaço reservado: foto em destaque, a substituir" data-slot="wall">
+      <div class="placeholder placeholder-wall" role="img" aria-label="Espaço reservado D8: cliente com a tatuagem cicatrizada, a substituir" data-slot="wall">
         <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-image"></use></svg>
-        <span class="placeholder-label">Parede · Foto em destaque · Substituir</span>
+        <span class="placeholder-label">D8 · Cliente com a tatuagem cicatrizada (21:9) · Substituir</span>
       </div>
     </div>
 
     <section id="cuidados" class="cuidados-sec" aria-labelledby="h-cuidados" tabindex="-1">
       <div class="container">
         <div class="cuidados-head reveal">
-          <p class="eyebrow">Cuidados</p>
           <h2 id="h-cuidados">Cuidados pós-tattoo</h2>
           <p class="lead">O que eu oriento depois de cada sessão. Se surgir qualquer dúvida, me chame.</p>
         </div>
 
         <ol class="cuidados reveal-group" role="list">
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">01</span>
             <div>
               <h3>Curativo</h3>
-              <p>Mantenha o curativo por <strong>2 horas</strong>, como indicado na sessão.</p>
+              <p>Mantenha o curativo por <strong>2&nbsp;horas</strong>, como indicado na sessão.</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">02</span>
             <div>
               <h3>Limpeza</h3>
               <p>Lave com água e sabonete neutro, sem esfregar.</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">03</span>
             <div>
               <h3>Hidratação</h3>
               <p>Aplique <strong>Cicaplast Baume B5+</strong> em camada fina.</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">04</span>
             <div>
               <h3>Sol e água</h3>
-              <p>Evite sol, piscina, mar e sauna por <strong>21 dias</strong>.</p>
+              <p>Evite sol, piscina, mar e sauna por <strong>21&nbsp;dias</strong>.</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">05</span>
             <div>
               <h3>Casquinhas</h3>
               <p>Não coce nem retire as casquinhas.</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="numeral" aria-hidden="true">06</span>
             <div>
               <h3>Dúvidas</h3>
               <p><a class="link-inline" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Fiz%20uma%20tatuagem%20com%20voc%C3%AA%20e%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20cuidados%3A%20" target="_blank" rel="noopener" data-cta="aftercare" aria-label="Qualquer dúvida, me chame no WhatsApp (abre em nova aba)">Qualquer dúvida, me chame no WhatsApp.</a></p>
@@ -816,7 +871,7 @@
         <a class="btn btn-inverse" id="cta-final-btn" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="cta_final" aria-label="Chamar no WhatsApp (abre em nova aba)">
           <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>Chamar no WhatsApp
         </a>
-        <p class="micro">Somente com hora marcada · <span class="tnum">Terça a sábado, 10h às 19h</span> · Guarulhos, SP e cidades próximas</p>
+        <p class="micro">Somente com hora marcada · <span class="tnum">Terça a sábado, 10h&nbsp;às&nbsp;19h</span> · Guarulhos, SP e cidades próximas</p>
         <p class="cta-link"><a href="https://www.instagram.com/davipimentel.tattoo" target="_blank" rel="noopener" aria-label="Prefere ver mais antes? @davipimentel.tattoo no Instagram (abre em nova aba)">Prefere ver mais antes? @davipimentel.tattoo no Instagram</a></p>
       </div>
     </section>
@@ -834,20 +889,20 @@
         <p class="slogan slogan-sm">A alma inspira. A pele eterniza.</p>
       </div>
       <div class="rodape-col">
-        <p class="eyebrow">Atendimento</p>
+        <h3 class="rodape-h">Atendimento</h3>
         <ul class="rodape-list" role="list">
           <li>Somente com hora marcada</li>
-          <li class="tnum">Terça a sábado, 10h às 19h</li>
+          <li class="tnum">Terça a sábado, 10h&nbsp;às&nbsp;19h</li>
           <li>Atendimento como guest — sem estúdio fixo</li>
           <li>Guarulhos, SP e cidades próximas</li>
-          <li>Somente maiores de 18 anos, com documento</li>
+          <li>Somente maiores de 18&nbsp;anos, com documento</li>
         </ul>
       </div>
       <div class="rodape-col">
-        <p class="eyebrow">Contato</p>
+        <h3 class="rodape-h">Contato</h3>
         <address class="rodape-contato">
           <ul>
-            <li><a href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="footer" aria-label="WhatsApp (11) 93348-9056 (abre em nova aba)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg><span>WhatsApp <span class="tnum">(11) 93348-9056</span></span></a></li>
+            <li><a href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="footer" aria-label="WhatsApp (11)&nbsp;93348-9056 (abre em nova aba)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg><span>WhatsApp <span class="tnum">(11)&nbsp;93348-9056</span></span></a></li>
             <li><a href="https://www.instagram.com/davipimentel.tattoo" target="_blank" rel="noopener" aria-label="Instagram @davipimentel.tattoo (abre em nova aba)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"></use></svg><span>Instagram @davipimentel.tattoo</span></a></li>
             <li><span class="rodape-txt"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tiktok"></use></svg><span>TikTok @davipimenteltattoo</span></span></li>
           </ul>
@@ -861,7 +916,7 @@
   </footer>
 
   <a class="float" href="https://wa.me/5511933489056?text=Ol%C3%A1%2C%20Davi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20or%C3%A7amento.%0AIdeia%3A%20%0ALocal%20do%20corpo%3A%20%0ATamanho%20aproximado%3A%20" target="_blank" rel="noopener" data-cta="floating" aria-label="Orçar pelo WhatsApp (abre em nova aba)">
-    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg><span class="float-label"><span class="float-short">Orçar</span><span class="float-long">&nbsp;pelo WhatsApp</span></span>
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg><span class="float-label">Orçar</span>
   </a>
 
   <dialog id="lightbox" class="lightbox" aria-label="Visualização ampliada do portfólio">
